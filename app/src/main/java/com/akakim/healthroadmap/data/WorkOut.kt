@@ -14,7 +14,6 @@ import androidx.room.Entity
 
 @Entity(tableName = "WorkOut")
 data class WorkOut(
-    @ColumnInfo(name="")
     @ColumnInfo(name="FoodName") @NonNull var foodName: String,
     @ColumnInfo(name="energy") @NonNull var energy : Int?,              // 총 칼로리
     @ColumnInfo(name="fat") @NonNull var fat : Int,                      // 지방

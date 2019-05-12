@@ -14,6 +14,50 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:strokeWidth="3dp"
+                app:strokeColor="#bbffbb"
+                app:cardElevation="5dp">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:columnCount="2">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="100dp"
+                            android:layout_gravity="fill"
+                            android:text="@string/myDailyEnergy"
+                            style="@style/HomeTitleItem"
+                            android:layout_columnWeight="1"
+                    />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvBMI"
+                            android:layout_gravity="fill"
+                            android:layout_columnWeight="1"
+                            style="@style/HomeTitleItem"
+                      />
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="100dp"
+                            android:layout_gravity="fill"
+                            android:text="@string/weightObject"
+                            style="@style/HomeTitleItem"
+                            android:layout_columnWeight="1"
+                    />
+                    <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/objectDailyEnergy"
+                            android:layout_gravity="fill"
+                            android:text="@string/weightObject"
+                            style="@style/HomeTitleItem"
+                            android:layout_columnWeight="1"
+                    />
+                </GridLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
     </androidx.core.widget.NestedScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

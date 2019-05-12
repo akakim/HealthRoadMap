@@ -5,4 +5,10 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+    <!-- home menu-->
+    <string name="myDailyEnergy"> 기초 대사량 </string>
+    <string name="weightObject"> 목표 칼로리 </string>
+
+
 </resources>

@@ -1,4 +1,4 @@
-package com.akakim
+package com.akakim.healthroadmap.samples
 
 //import android.arch.lifecycle.ViewModelProviders
 //import android.support.v7.app.AppCompatActivity
@@ -14,9 +14,10 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.akakim.db.Word
-import com.akakim.db.WordListAdapter
+//import com.akakim.db.WordListAdapter
 import com.akakim.db.WordViewModel
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+
 /*
 class MainActivity : AppCompatActivity() {
 
