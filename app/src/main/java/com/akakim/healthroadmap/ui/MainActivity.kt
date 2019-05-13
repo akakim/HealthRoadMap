@@ -1,10 +1,11 @@
-package com.akakim.healthroadmap
+package com.akakim.healthroadmap.ui
 
 import android.os.Bundle
 import android.view.MenuItem
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.TextView
+import com.akakim.healthroadmap.R
 
 class MainActivity : AppCompatActivity(),BottomNavigationView.OnNavigationItemSelectedListener{
 

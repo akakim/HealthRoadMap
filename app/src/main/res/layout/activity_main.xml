@@ -6,7 +6,7 @@
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".ui.MainActivity">
 
     <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
@@ -21,40 +21,46 @@
                 app:strokeColor="#bbffbb"
                 app:cardElevation="5dp">
 
-                <GridLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:columnCount="2">
+                    android:layout_height="wrap_content">
 
                     <androidx.appcompat.widget.AppCompatTextView
-                            android:layout_width="100dp"
+                            android:id="@+id/tvBMITitle"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
                             android:layout_gravity="fill"
                             android:text="@string/myDailyEnergy"
-                            style="@style/HomeTitleItem"
+                            style="@style/HomeItem"
                             android:layout_columnWeight="1"
                     />
 
                     <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/tvBMI"
-                            android:layout_gravity="fill"
-                            android:layout_columnWeight="1"
-                            style="@style/HomeTitleItem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/tvBMITitle"
+                             android:id="@+id/tvBMI"
+                            style="@style/HomeItem"
+
                       />
                     <androidx.appcompat.widget.AppCompatTextView
-                            android:layout_width="100dp"
+                            android:layout_width="120dp"
                             android:layout_gravity="fill"
                             android:text="@string/weightObject"
-                            style="@style/HomeTitleItem"
+                            android:layout_below="@id/tvBMITitle"
+                            style="@style/HomeItem"
                             android:layout_columnWeight="1"
                     />
                     <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/objectDailyEnergy"
+                            android:id="@+id/objectWeeklyEnergy"
                             android:layout_gravity="fill"
-                            android:text="@string/weightObject"
-                            style="@style/HomeTitleItem"
+                            style="@style/HomeItem"
                             android:layout_columnWeight="1"
                     />
-                </GridLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        />
+                </RelativeLayout>
 
 
             </com.google.android.material.card.MaterialCardView>

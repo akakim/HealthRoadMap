@@ -8,7 +8,7 @@ import java.util.Date
 @Entity(tableName = "MyBMRMap")
 data class MyBMRMap (
 
-    @ColumnInfo(name="inputEnergy") var inputEnergy : Float,
-    @ColumnInfo(name="myWeight") var myWeight : Float,
-    @ColumnInfo(name="day") var date : Date
+    @ColumnInfo(name="inputEnergy")     var inputEnergy : Float,
+    @ColumnInfo(name="myWeight")        var myWeight : Float,
+    @ColumnInfo(name="day")             var date : Date
 )

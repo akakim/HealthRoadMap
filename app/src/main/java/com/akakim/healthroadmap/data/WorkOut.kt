@@ -10,17 +10,13 @@ import androidx.room.Entity
  * @since 0.0.1
  * @date 2019-05-12
  *  운동 목록을 의미하는 데이터.
+ *  빈도수는 카운팅
  */
 
 @Entity(tableName = "WorkOut")
 data class WorkOut(
-    @ColumnInfo(name="FoodName") @NonNull var foodName: String,
-    @ColumnInfo(name="energy") @NonNull var energy : Int?,              // 총 칼로리
-    @ColumnInfo(name="fat") @NonNull var fat : Int,                      // 지방
-    @ColumnInfo(name="saturates") @NonNull var saturates : Int,          // 셀룰라이트 , 포화 지방
-    @ColumnInfo(name="carbohydrate") @NonNull var carbohydrate : Int,   // 탄수화물
-    @ColumnInfo(name="sugar") @NonNull var sugar : Int,                 // 당
-    @ColumnInfo(name="protein") @NonNull var protein : Int,             // 단백질
-    @ColumnInfo(name="salt") @NonNull var salt : Int,           // 나트륨
-    @ColumnInfo(name="fiber") @NonNull var dietaryfiber : Int           //식이섬위
+    @ColumnInfo(name="workOutName")     @NonNull var workOutName: String,   // 운동
+    @ColumnInfo(name="equipment")       @NonNull var equipment : String,    // 장비
+    @ColumnInfo(name="targetMuscle")    @NonNull var targetMuscle : String, // 운동의 목적 부위
+    @ColumnInfo(name="targetDetail")    @NonNull var targetDetail : String  // 사용자가 더 집중할 부위
 )

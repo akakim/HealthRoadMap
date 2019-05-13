@@ -8,7 +8,7 @@
 
     <!-- home menu-->
     <string name="myDailyEnergy"> 기초 대사량 </string>
-    <string name="weightObject"> 목표 칼로리 </string>
+    <string name="weightObject"> 유지할 칼로리(1주일) </string>
 
 
 </resources>

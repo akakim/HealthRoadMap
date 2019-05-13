@@ -13,7 +13,7 @@ import androidx.room.Entity
 
 @Entity(tableName = "Food")
 data class Food(
-    @ColumnInfo(name="FoodName")    @NonNull var foodName: String,
+    @ColumnInfo(name="foodName")    @NonNull var foodName: String,
     @ColumnInfo(name="energy")      @NonNull var energy : Int?,              // 총 칼로리
     @ColumnInfo(name="fat")         @NonNull var fat : Int,                      // 지방
     @ColumnInfo(name="saturates")   @NonNull var saturates : Int,          // 셀룰라이트 , 포화 지방
