@@ -16,54 +16,64 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="400dp"
                 app:strokeWidth="3dp"
                 app:strokeColor="#bbffbb"
                 app:cardElevation="5dp">
 
                 <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
                     <androidx.appcompat.widget.AppCompatTextView
                             android:id="@+id/tvBMITitle"
-                            android:layout_width="120dp"
+                            android:layout_width="140dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="fill"
                             android:text="@string/myDailyEnergy"
                             style="@style/HomeItem"
-                            android:layout_columnWeight="1"
                     />
 
                     <androidx.appcompat.widget.AppCompatTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_toRightOf="@id/tvBMITitle"
-                             android:id="@+id/tvBMI"
+                            android:layout_toEndOf="@id/tvBMITitle"
+                            android:id="@+id/tvBMI"
                             style="@style/HomeItem"
 
-                      />
+                    />
                     <androidx.appcompat.widget.AppCompatTextView
-                            android:layout_width="120dp"
-                            android:layout_gravity="fill"
+                            android:id="@+id/tvObjectTitle"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
                             android:text="@string/weightObject"
                             android:layout_below="@id/tvBMITitle"
                             style="@style/HomeItem"
-                            android:layout_columnWeight="1"
+
+
                     />
                     <androidx.appcompat.widget.AppCompatTextView
                             android:id="@+id/objectWeeklyEnergy"
-                            android:layout_gravity="fill"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvBMITitle"
+                            android:layout_toEndOf="@id/tvObjectTitle"
                             style="@style/HomeItem"
-                            android:layout_columnWeight="1"
                     />
 
                     <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btnCheckWeight"
+                            android:text="입력"
+                            android:layout_below="@id/tvObjectTitle"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="12dp"
                         />
                 </RelativeLayout>
 
 
-            </com.google.android.material.card.MaterialCardView>
+           </com.google.android.material.card.MaterialCardView>
     </androidx.core.widget.NestedScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

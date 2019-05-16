@@ -7,8 +7,9 @@
     <string name="title_notifications">Notifications</string>
 
     <!-- home menu-->
-    <string name="myDailyEnergy"> 기초 대사량 </string>
-    <string name="weightObject"> 유지할 칼로리(1주일) </string>
+    <string name="myDailyEnergy">기초 대사량</string>
+    <string name="weightObject">유지할 칼로리(1주일)</string>
+    <string name="title_activity_weight_tracker">WeightTrackerActivity</string>
 
 
 </resources>
