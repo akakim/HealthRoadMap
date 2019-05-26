@@ -9,4 +9,59 @@
         tools:showIn="@layout/activity_weight_tracker"
         tools:context=".ui.WeightTrackerActivity">
 
+
+    <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvObject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeWidth="3dp"
+            app:strokeColor="#bbffbb"
+            app:cardElevation="5dp">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvBMITitle"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill"
+                    android:text="@string/myDailyEnergy"
+                    style="@style/HomeItem"
+            />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/tvBMITitle"
+                    android:id="@+id/tvBMI"
+                    style="@style/HomeItem"
+
+            />
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvObjectTitle"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/weightObject"
+                    android:layout_below="@id/tvBMITitle"
+                    style="@style/HomeItem"
+
+
+            />
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/objectWeeklyEnergy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvBMITitle"
+                    android:layout_toEndOf="@id/tvObjectTitle"
+                    style="@style/HomeItem"
+            />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
